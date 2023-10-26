@@ -55,14 +55,18 @@ const goKline = (item)=>{
     query:item
   })
 }
+
+const goLang = ()=>{
+  router.push("/lang")
+}
 </script>
 
 <template>
   <div class="home">
     <div class="header">
       <span class="material-symbols-outlined"> account_circle </span>
-      <span>首页</span>
-      <span class="material-symbols-outlined"> language </span>
+      <span>{{$t('home.title')}}</span>
+      <span class="material-symbols-outlined" @click="goLang"> language </span>
     </div>
     <div class="banner">
       <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">

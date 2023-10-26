@@ -23,27 +23,27 @@ const onRefresh = () => {
       <van-tabbar-item to="/home">
         <span class="material-symbols-outlined"> home </span>
         <br />
-        <span>首页</span>
+        <span>{{$t('home.title')}}</span>
       </van-tabbar-item>
       <van-tabbar-item to="/trade">
         <span class="material-symbols-outlined"> monitoring </span>
         <br />
-        <span>交易</span>
+        <span>{{$t('trade.title')}}</span>
       </van-tabbar-item>
       <van-tabbar-item to="/kline">
         <span class="material-symbols-outlined"> candlestick_chart </span>
         <br />
-        <span>行情</span>
+        <span>{{$t('quote.title')}}</span>
       </van-tabbar-item>
       <van-tabbar-item to="/wallet">
         <span class="material-symbols-outlined"> account_balance_wallet </span>
         <br />
-        <span>钱包</span>
+        <span>{{$t('wallet.title')}}</span>
       </van-tabbar-item>
       <van-tabbar-item to="/mine">
         <span class="material-symbols-outlined"> person </span>
         <br />
-        <span>我的</span>
+        <span>{{$t('mine.title')}}</span>
       </van-tabbar-item>
     </van-tabbar>
   </div>

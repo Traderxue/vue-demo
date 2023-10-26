@@ -77,6 +77,10 @@ const router = createRouter({
       path:"/coin_trade",
       component:()=>import("@/components/coin_trade.vue")
     },
+    {
+      path:"/lang",
+      component:()=>import("@/components/lang.vue")
+    }
    
   ]
 })
