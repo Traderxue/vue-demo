@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import {useRouter} from "vue-router"
+import drawer from "@/components/lang.vue"
 
 const router = useRouter()
 
@@ -59,12 +60,16 @@ const goKline = (item)=>{
 const goLang = ()=>{
   router.push("/lang")
 }
+
+const goMine = () =>{
+  router.push("/mine")
+}
 </script>
 
 <template>
   <div class="home">
     <div class="header">
-      <span class="material-symbols-outlined"> account_circle </span>
+      <span class="material-symbols-outlined" @click="goMine"> account_circle </span>
       <span>{{$t('home.title')}}</span>
       <span class="material-symbols-outlined" @click="goLang"> language </span>
     </div>
